@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='style.css' />
+  </head>
+  <body>
+    <h1 id='head' name='head'>Type your note below</h1>
+
+    <textarea placeholder="Write your note here..."
+      rows="10" cols="80"
+      name="note" id="note"></textarea>
+    <textarea placeholder="..."
+      rows="1" cols="40"
+      name="note-url" id="note-url"
+      style='display: none'></textarea>
+
+
+    <div clear='both'></div>
+
+    <button name='store-note' id='store-note'
+      onclick='return storeNote();'>Save</button>
+
+
+    <script src='lib/jquery.min.js'></script>
+    <script src='lib/crypto-js.js'></script>
+    <script src='script.js'></script>
+  </body>
+</html>

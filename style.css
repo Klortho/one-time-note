@@ -1,0 +1,16 @@
+body {
+  padding: 3em;
+}
+#store-note {
+  background-color: #960000;
+  border-radius: 5px;
+  border: 1px solid #960000;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+  margin: 1em 0;
+  line-height: 2rem;
+  text-align: center;
+}

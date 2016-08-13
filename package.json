@@ -1,0 +1,23 @@
+{
+  "name": "one-time-note",
+  "version": "0.0.1",
+  "description": "Clone of Privnote, not done.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klortho/one-time-note.git"
+  },
+  "keywords": [
+    "privacy",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Chris Maloney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klortho/one-time-note/issues"
+  },
+  "homepage": "https://github.com/klortho/one-time-note#readme"
+}
