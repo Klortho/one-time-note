@@ -1,23 +1,33 @@
 # Custom Mission-Impossible style note
 
-This is a start at a clone of privnote, but I didn't get
-very far. I think that privnote is actually okay, since
-the last major version came out.
-I probably won't get back to this one.
+This is a stab at making a clone of
+[privnote](https://privnote.com), because I didn't trust
+them. But, after getting started, I came around to a better
+understanding of how the algorithm there works (basically,
+the same way I had in mind that it *should* work).
 
-## How this works
+So, privnote is *probably* okay; ever since the last major
+version came out. So, I probably won't ever get back to
+finishing this one.
 
-This is the main form. "index.html" should raedirect here.
+## How it works
+
+It's expected that this will be used only over HTTPS.
+
+The entry point is just an HTML form, "tnwsd.html". The
+"index.html" page should redirect to that one.
+
 The user types in his or her note, and clicks the button.
-At that point, the client encrypts the note using an auto-
-generated key. The key is 30 random, base 64 characters.
+The *client* encrypts the note using an
+auto-generated key that should be long enough to resist
+brute force hacking for the foreseeable future. The key
+is 30 random, base 64 characters.
 
 The JS then POSTS to post.cgi, sending the first half of
 the key and the ciphertext. post.cgi stores the ciphertext
-in a data file.
+in a data file, using the first half lf the key as f
+filename.
 
-Oh, shoot, the place I wanted to deploy it to doesn't let
-me write to the filesystem.
 
 
 ## Third-party libraries
