@@ -1,14 +1,24 @@
-# Custom Mission-Impossible style note
+# one-time-note
+
+A service that let's your write Mission-Impossible style
+notes that can only be viewed once.
 
 This is a stab at making a clone of
-[privnote](https://privnote.com), because I didn't trust
-them. But, after getting started, I came around to a better
-understanding of how the algorithm there works (basically,
-the same way I had in mind that it *should* work).
+[privnote](https://privnote.com), undertaken because I didn't trust
+them. In an early blog post I read of the author's, he seemed
+a bit tone-deaf to the concerns that people might not be
+willing to take his word for it that he destroyed logs on his
+server, etc. Also, privnote, it seems, uses an old library and
+algorithm for AES encryption:
+[gibberish-aes](https://github.com/mdp/gibberish-aes), the
+README for which says:
 
-So, privnote is *probably* okay; ever since the last major
-version came out. So, I probably won't ever get back to
-finishing this one.
+> This library is a quite old, and uses an older and
+> non-authenticated cipher mode, CBC. There are better
+> and more frequently maintained alternatives
+
+So, it would be good to finish this one.
+
 
 ## How it works
 
